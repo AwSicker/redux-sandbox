@@ -1,6 +1,6 @@
 export const inc = () => ({type: 'INC'});
 export const dec = () => ({type: 'DEC'});
-export const rnd = (func) => ({
+export const rnd = () => ({
     type: "RND",
-    payload: func,
+    payload: Math.floor(Math.random()* 10)
 })
